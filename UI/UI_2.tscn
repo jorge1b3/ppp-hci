@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://c32sm87mbdatn"]
+
+[ext_resource type="Script" uid="uid://coo4afr0mr8pn" path="res://Scripts/ControlUI_1.gd" id="1_jxvi7"]
+[ext_resource type="FontFile" uid="uid://bj0tlnd3nxv37" path="res://Tipografias/Roboto-ExtraLight.ttf" id="2_h6hb0"]
+[ext_resource type="FontFile" uid="uid://c03476mq184q4" path="res://Tipografias/Roboto-Light.ttf" id="3_erv1x"]
+[ext_resource type="Texture2D" uid="uid://ddjicxacnyive" path="res://UI/Imagenes/user-interface.png" id="4_h6hb0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jxvi7"]
+bg_color = Color(0.34495983, 0.18620001, 0.98, 0.5647059)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_gpdgt"]
+font_size = 13
+
+[node name="Ui1" type="CanvasLayer"]
+script = ExtResource("1_jxvi7")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 300.0
+offset_bottom = 200.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 200.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jxvi7")
+
+[node name="NextEscene" type="Button" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 156.0
+offset_right = 281.0
+offset_bottom = 187.0
+text = "Siguiente Escena"
+
+[node name="NextEscene2" type="Button" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 109.0
+offset_right = 288.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("2_h6hb0")
+theme_override_font_sizes/font_size = 14
+text = "Desaaprece Input"
+
+[node name="Label" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 21.0
+offset_right = 226.0
+offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("3_erv1x")
+text = "Escena 2"
+label_settings = SubResource("LabelSettings_gpdgt")
+horizontal_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 60.0
+offset_right = 274.0
+offset_bottom = 94.0
+placeholder_text = "Input Text"
+
+[node name="TextureRect" type="TextureRect" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 110.0
+offset_right = 101.0
+offset_bottom = 185.0
+texture = ExtResource("4_h6hb0")
+expand_mode = 1
+
+[connection signal="pressed" from="Control/Panel/NextEscene" to="." method="_on_next_escene_pressed"]
+[connection signal="pressed" from="Control/Panel/NextEscene2" to="." method="_on_next_escene_2_pressed"]
