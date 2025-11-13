@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://demcm3fbl6akt" path="res://Objetos/Suelo.tscn" id="1_rwuof"]
 [ext_resource type="PackedScene" uid="uid://ck0sadmqu3hrk" path="res://Objetos/CamaraXR.tscn" id="2_iv5b0"]
 [ext_resource type="PackedScene" uid="uid://b1q8tjewxjdh4" path="res://Objetos/Mesa.tscn" id="4_3ccqb"]
-[ext_resource type="PackedScene" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_lkqo8"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_lkqo8"]
 [ext_resource type="PackedScene" uid="uid://5nt7ijxt1hpp" path="res://UI/UI_1.tscn" id="6_10xg8"]
 [ext_resource type="PackedScene" uid="uid://6yqcatqx2o76" path="res://Objetos/Agarrable1.tscn" id="7_g8504"]
 [ext_resource type="PackedScene" uid="uid://dgdb1texynduw" path="res://addons/godot-xr-tools/objects/virtual_keyboard.tscn" id="8_dr5is"]
