@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c3ad71abf5280f5b30758c417ea370050f6c290d776f1bfe71909be06c65a49
-size 800
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://djje3x1fwj0sd"
+path="res://.godot/imported/Roboto-SemiBoldItalic.ttf-443e2506096905b3cdb61020341ef998.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto-SemiBoldItalic.ttf"
+dest_files=["res://.godot/imported/Roboto-SemiBoldItalic.ttf-443e2506096905b3cdb61020341ef998.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

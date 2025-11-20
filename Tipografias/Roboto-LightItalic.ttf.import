@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89d6f9ad30adb3aa24fea92e30bb327e8f677ecf494c74fbdb46e7ddb34d8dad
-size 791
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://bu5l8xecbmc2n"
+path="res://.godot/imported/Roboto-LightItalic.ttf-fd604208a4085c658112576f79668734.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto-LightItalic.ttf"
+dest_files=["res://.godot/imported/Roboto-LightItalic.ttf-fd604208a4085c658112576f79668734.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

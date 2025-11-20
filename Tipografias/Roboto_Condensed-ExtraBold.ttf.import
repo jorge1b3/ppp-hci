@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5bf7d8d2e73c5fd889e5271b27ccedbfde66e05f7904313dea2a146a57cc6625
-size 815
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://c1h2gm5cxp61q"
+path="res://.godot/imported/Roboto_Condensed-ExtraBold.ttf-fa7b35b4b904eaec3134f171fca512d6.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto_Condensed-ExtraBold.ttf"
+dest_files=["res://.godot/imported/Roboto_Condensed-ExtraBold.ttf-fa7b35b4b904eaec3134f171fca512d6.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f75a2b7791c87d21a1a74b30c1f7563629053b2838d772ce6a6fe835964cbf3
-size 820
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://1xukq1p4omke"
+path="res://.godot/imported/Roboto_SemiCondensed-Regular.ttf-10c8d64043dffa0a03dbd1846b1c91b3.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto_SemiCondensed-Regular.ttf"
+dest_files=["res://.godot/imported/Roboto_SemiCondensed-Regular.ttf-10c8d64043dffa0a03dbd1846b1c91b3.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

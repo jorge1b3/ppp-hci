@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46177a4edb1a671e1fb3ce96c2f451c082f739ec3fdd1e095290d6882205954e
-size 772
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://yrgiuphclcay"
+path="res://.godot/imported/Roboto-Black.ttf-ddf019acd92371753eff1bc97dc5d324.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto-Black.ttf"
+dest_files=["res://.godot/imported/Roboto-Black.ttf-ddf019acd92371753eff1bc97dc5d324.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}
