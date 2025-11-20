@@ -50,7 +50,6 @@ scene_properties_keys = PackedStringArray("ControlUI_1.gd")
 
 [node name="VirtualKeyboard" parent="." instance=ExtResource("8_dr5is")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0.13397354, 3.0634155)
-visible = false
 scene_properties_keys = PackedStringArray("virtual_keyboard_2d.gd")
 
 [node name="Button" type="Button" parent="."]

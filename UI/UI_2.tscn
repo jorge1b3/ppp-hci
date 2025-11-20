@@ -1,15 +1,18 @@
-[gd_scene load_steps=13 format=3 uid="uid://c32sm87mbdatn"]
+[gd_scene load_steps=15 format=3 uid="uid://c32sm87mbdatn"]
 
 [ext_resource type="Script" uid="uid://coo4afr0mr8pn" path="res://Scripts/ControlUI_1.gd" id="1_jxvi7"]
 [ext_resource type="FontFile" uid="uid://bj0tlnd3nxv37" path="res://Tipografias/Roboto-ExtraLight.ttf" id="2_h6hb0"]
 [ext_resource type="Texture2D" uid="uid://vxems587hkih" path="res://assets/interfaz_1.png" id="2_qxkxo"]
-[ext_resource type="FontFile" uid="uid://c03476mq184q4" path="res://Tipografias/Roboto-Light.ttf" id="3_erv1x"]
-[ext_resource type="Texture2D" uid="uid://ddjicxacnyive" path="res://UI/Imagenes/user-interface.png" id="4_h6hb0"]
 [ext_resource type="Texture2D" uid="uid://c1tdtchxatx8b" path="res://assets/Tienda.svg" id="6_r53ui"]
 [ext_resource type="Texture2D" uid="uid://c25sqw3ftrwoc" path="res://assets/cartera.svg" id="7_xixsu"]
 [ext_resource type="Texture2D" uid="uid://5s62tpvmf5dx" path="res://assets/Green Light Off.svg" id="8_psmre"]
 [ext_resource type="Texture2D" uid="uid://fouaoqfr4ay3" path="res://assets/almacenar_datos.svg" id="9_f7fei"]
 [ext_resource type="Texture2D" uid="uid://dw6765ncy4sqt" path="res://assets/Buscar.svg" id="10_8vbsk"]
+[ext_resource type="Texture2D" uid="uid://bxauuytvkl53q" path="res://assets/busqueda_web.svg" id="11_8vbsk"]
+[ext_resource type="Texture2D" uid="uid://cmnb2kts5by7y" path="res://assets/proceso_financiero.svg" id="12_sm51u"]
+[ext_resource type="Texture2D" uid="uid://88xfljmq3e8m" path="res://assets/te_escucho.svg" id="13_fy1ti"]
+[ext_resource type="Texture2D" uid="uid://bcxgjmiar8djb" path="res://assets/Te_escucho_logo.svg" id="14_klqku"]
+[ext_resource type="Texture2D" uid="uid://blyqmbrywdapl" path="res://assets/voice.svg" id="15_1hojg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jxvi7"]
 bg_color = Color(0.34495983, 0.18620001, 0.98, 0.5647059)
@@ -17,9 +20,6 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
-
-[sub_resource type="LabelSettings" id="LabelSettings_gpdgt"]
-font_size = 13
 
 [node name="Ui1" type="CanvasLayer"]
 script = ExtResource("1_jxvi7")
@@ -59,34 +59,6 @@ theme_override_fonts/font = ExtResource("2_h6hb0")
 theme_override_font_sizes/font_size = 14
 text = "Desaaprece Input"
 
-[node name="Label" type="Label" parent="Control/Panel"]
-layout_mode = 0
-offset_left = 74.0
-offset_top = 21.0
-offset_right = 226.0
-offset_bottom = 44.0
-theme_override_fonts/font = ExtResource("3_erv1x")
-text = "Escena 2"
-label_settings = SubResource("LabelSettings_gpdgt")
-horizontal_alignment = 1
-
-[node name="TextEdit" type="TextEdit" parent="Control/Panel"]
-layout_mode = 0
-offset_left = 25.0
-offset_top = 60.0
-offset_right = 274.0
-offset_bottom = 94.0
-placeholder_text = "Input Text"
-
-[node name="TextureRect" type="TextureRect" parent="Control/Panel"]
-layout_mode = 0
-offset_left = 30.0
-offset_top = 110.0
-offset_right = 101.0
-offset_bottom = 185.0
-texture = ExtResource("4_h6hb0")
-expand_mode = 1
-
 [node name="Button" type="Button" parent="Control/Panel"]
 layout_mode = 0
 offset_left = 1668.0
@@ -115,7 +87,7 @@ icon = ExtResource("8_psmre")
 flat = true
 
 [node name="AlmacenarDatos" type="Sprite2D" parent="."]
-position = Vector2(225, -5)
+position = Vector2(1622, 616)
 texture = ExtResource("9_f7fei")
 
 [node name="Button" type="Button" parent="."]
@@ -125,6 +97,30 @@ offset_right = 1984.0
 offset_bottom = 1028.0
 icon = ExtResource("10_8vbsk")
 flat = true
+
+[node name="AlmacenarDatos2" type="Sprite2D" parent="."]
+position = Vector2(1581, 798)
+texture = ExtResource("9_f7fei")
+
+[node name="BusquedaWeb" type="Sprite2D" parent="."]
+position = Vector2(1735, 954)
+texture = ExtResource("11_8vbsk")
+
+[node name="ProcesoFinanciero" type="Sprite2D" parent="."]
+position = Vector2(1712, 453)
+texture = ExtResource("12_sm51u")
+
+[node name="TeEscucho" type="Sprite2D" parent="."]
+position = Vector2(2025, 800)
+texture = ExtResource("13_fy1ti")
+
+[node name="TeEscuchoLogo" type="Sprite2D" parent="."]
+position = Vector2(2033, 664)
+texture = ExtResource("14_klqku")
+
+[node name="Voice" type="Sprite2D" parent="."]
+position = Vector2(1268, 1186)
+texture = ExtResource("15_1hojg")
 
 [connection signal="pressed" from="Control/Panel/NextEscene" to="." method="_on_next_escene_pressed"]
 [connection signal="pressed" from="Control/Panel/NextEscene2" to="." method="_on_next_escene_2_pressed"]
