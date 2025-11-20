@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2867e216d7b8a5188a61e94dddee3fe26fdf42f86592416798c8caec54179bbe
-size 800
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://c0ipfg3c5r68k"
+path="res://.godot/imported/Roboto_Condensed-Thin.ttf-cf11efeb795bc442d82b98b52721c265.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto_Condensed-Thin.ttf"
+dest_files=["res://.godot/imported/Roboto_Condensed-Thin.ttf-cf11efeb795bc442d82b98b52721c265.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

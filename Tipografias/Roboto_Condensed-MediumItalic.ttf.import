@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e61fba3aeb90f8cac65eadea944fd4d101cbeecf6802676355d794044ba1a81f
-size 824
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://csetgubuecfwo"
+path="res://.godot/imported/Roboto_Condensed-MediumItalic.ttf-944bef43f5517810d13533950302e499.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto_Condensed-MediumItalic.ttf"
+dest_files=["res://.godot/imported/Roboto_Condensed-MediumItalic.ttf-944bef43f5517810d13533950302e499.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

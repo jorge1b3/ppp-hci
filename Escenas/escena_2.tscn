@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://ck0sadmqu3hrk" path="res://Objetos/CamaraXR.tscn" id="3_ql3nl"]
 [ext_resource type="PackedScene" uid="uid://b1q8tjewxjdh4" path="res://Objetos/Mesa.tscn" id="4_0w31f"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_1kwhq"]
-[ext_resource type="PackedScene" uid="uid://c32sm87mbdatn" path="res://UI/UI_2.tscn" id="6_xlp7v"]
 [ext_resource type="PackedScene" uid="uid://6yqcatqx2o76" path="res://Objetos/Agarrable1.tscn" id="7_xlp7v"]
+[ext_resource type="PackedScene" uid="uid://d237xw28ods1j" path="res://Escenas/menu_de_opciones.tscn" id="9_1kwhq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_iv5b0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -36,6 +36,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 [node name="CamaraXr" parent="." instance=ExtResource("3_ql3nl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
 
+[node name="Viewport2Din3D" parent="CamaraXr" instance=ExtResource("5_1kwhq")]
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0.24685967, 0.012697846, 1.0330102)
+scene = ExtResource("9_1kwhq")
+viewport_size = Vector2(1000, 800)
+scene_properties_keys = PackedStringArray()
+
 [node name="Button" type="Button" parent="."]
 visible = false
 anchors_preset = 8
@@ -54,13 +60,8 @@ text = "Acivar VR Version 5"
 [node name="Mesa" parent="." instance=ExtResource("4_0w31f")]
 transform = Transform3D(-0.0007155378, 0.99999976, 0, -0.99999976, -0.0007155378, 0, 0, 0, 1, -1.106732, 1.3894745, -2.5734253)
 
-[node name="Viewport2Din3D" parent="." instance=ExtResource("5_1kwhq")]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0, 1.6118876, 3.0427957)
-scene = ExtResource("6_xlp7v")
-scene_properties_keys = PackedStringArray("ControlUI_1.gd")
-
 [node name="Mesa2" parent="." instance=ExtResource("4_0w31f")]
-transform = Transform3D(-4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 0, 0, 1, 1.5226328, 1.2682295, -2.9660778)
+transform = Transform3D(-4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 0, 0, 1, 2.244017, 1.2682296, -1.7122293)
 
 [node name="Agarrable1" parent="." instance=ExtResource("7_xlp7v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17372441, -0.100000046, -2.6447213)

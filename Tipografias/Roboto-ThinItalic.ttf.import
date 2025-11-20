@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08ad28a5608befcf185ac4f1ff793c7e3981a5371d8807519b733191a1c8f90f
-size 788
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://b8rvivjxfsp7h"
+path="res://.godot/imported/Roboto-ThinItalic.ttf-a9a409050421d189c1cb24a13d8ba441.fontdata"
+
+[deps]
+
+source_file="res://Tipografias/Roboto-ThinItalic.ttf"
+dest_files=["res://.godot/imported/Roboto-ThinItalic.ttf-a9a409050421d189c1cb24a13d8ba441.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}
