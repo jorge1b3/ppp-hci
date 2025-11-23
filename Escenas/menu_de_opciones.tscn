@@ -1,6 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://d237xw28ods1j"]
+[gd_scene load_steps=13 format=3 uid="uid://d237xw28ods1j"]
 
 [ext_resource type="Texture2D" uid="uid://cmnb2kts5by7y" path="res://assets/proceso_financiero.svg" id="1_6l0n0"]
+[ext_resource type="Script" uid="uid://dpmqm5wu6wysw" path="res://Escenas/menu_de_opciones.gd" id="1_o0gqr"]
+[ext_resource type="Script" uid="uid://dhs566f2hqqi4" path="res://Escenas/controlMenuDeOpciones.gd" id="2_3sydd"]
 [ext_resource type="Texture2D" uid="uid://c25sqw3ftrwoc" path="res://assets/cartera.svg" id="2_o0gqr"]
 [ext_resource type="Texture2D" uid="uid://fouaoqfr4ay3" path="res://assets/almacenar_datos.svg" id="3_3sydd"]
 [ext_resource type="Texture2D" uid="uid://5s62tpvmf5dx" path="res://assets/Green Light Off.svg" id="4_07tlw"]
@@ -13,22 +15,33 @@
 
 [node name="MenuDeOpciones" type="CanvasLayer"]
 follow_viewport_enabled = true
+script = ExtResource("1_o0gqr")
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 6.1035156e-05
+offset_top = 3.0517578e-05
+offset_right = 40.00006
+offset_bottom = 40.00003
+script = ExtResource("2_3sydd")
+
+[node name="P_Financiero" type="TextureButton" parent="Control"]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 737.0
-offset_top = 148.0
-offset_right = -102.0
-offset_bottom = -426.0
+offset_left = 736.99994
+offset_top = 147.99997
+offset_right = 1010.0
+offset_bottom = 181.99997
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.4263337, 0.4444639)
 texture_normal = ExtResource("1_6l0n0")
 stretch_mode = 0
 
-[node name="TextureRect" type="TextureRect" parent="TextureButton"]
+[node name="TextureRect" type="TextureRect" parent="Control/P_Financiero"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -41,20 +54,21 @@ offset_right = 220.5
 offset_bottom = 76.03999
 texture = ExtResource("2_o0gqr")
 
-[node name="TextureButton2" type="TextureButton" parent="."]
+[node name="AlmDatos" type="TextureButton" parent="Control"]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 672.0
-offset_top = 236.0
-offset_right = -167.0
-offset_bottom = -338.0
+offset_left = 671.99994
+offset_top = 235.99997
+offset_right = 944.99994
+offset_bottom = 269.99997
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.4263337, 0.44446397)
 texture_normal = ExtResource("3_3sydd")
 
-[node name="TextureRect" type="TextureRect" parent="TextureButton2"]
+[node name="TextureRect" type="TextureRect" parent="Control/AlmDatos"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -67,20 +81,21 @@ offset_right = 220.5
 offset_bottom = 76.03999
 texture = ExtResource("4_07tlw")
 
-[node name="TextureButton3" type="TextureButton" parent="."]
+[node name="AyCompras" type="TextureButton" parent="Control"]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 672.0
-offset_top = 328.0
-offset_right = -167.0
-offset_bottom = -246.0
+offset_left = 671.99994
+offset_top = 327.99997
+offset_right = 944.99994
+offset_bottom = 361.99997
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.4263337, 0.44446367)
 texture_normal = ExtResource("5_2a3nu")
 
-[node name="TextureRect" type="TextureRect" parent="TextureButton3"]
+[node name="TextureRect" type="TextureRect" parent="Control/AyCompras"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -93,20 +108,21 @@ offset_right = 220.5
 offset_bottom = 76.03999
 texture = ExtResource("6_enhpv")
 
-[node name="TextureButton4" type="TextureButton" parent="."]
+[node name="Busqweb" type="TextureButton" parent="Control"]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 731.0
-offset_top = 433.0
-offset_right = -108.0
-offset_bottom = -141.0
+offset_left = 730.99994
+offset_top = 432.99997
+offset_right = 1004.0
+offset_bottom = 466.99997
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.4263337, 0.44446337)
 texture_normal = ExtResource("7_8u07y")
 
-[node name="TextureRect" type="TextureRect" parent="TextureButton4"]
+[node name="TextureRect" type="TextureRect" parent="Control/Busqweb"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -119,23 +135,24 @@ offset_right = 220.5
 offset_bottom = 76.03999
 texture = ExtResource("8_86mgn")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 354.99994
-offset_top = -90.0
-offset_right = 604.0
-offset_bottom = 199.0
+offset_left = 910.9999
+offset_top = 213.99997
+offset_right = 1160.0
+offset_bottom = 503.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.4263337, 0.44446397)
 size_flags_horizontal = 4
 texture = ExtResource("9_6l0n0")
 
-[node name="TextureRect2" type="TextureRect" parent="TextureRect"]
+[node name="TextureRect2" type="TextureRect" parent="Control/TextureRect"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.48200002
@@ -150,3 +167,8 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 texture = ExtResource("10_j6udj")
+
+[connection signal="pressed" from="Control/P_Financiero" to="Control" method="_on_p_financiero_pressed"]
+[connection signal="pressed" from="Control/AlmDatos" to="Control" method="_on_alm_datos_pressed"]
+[connection signal="pressed" from="Control/AyCompras" to="Control" method="_on_ay_compras_pressed"]
+[connection signal="pressed" from="Control/Busqweb" to="Control" method="_on_busqweb_pressed"]

@@ -25,7 +25,7 @@ tonemap_mode = 2
 script = ExtResource("1_iv5b0")
 
 [node name="CamaraXr" parent="." instance=ExtResource("2_iv5b0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96237934, 1.6722956)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_lkqo8")
@@ -35,13 +35,13 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="Suelo" parent="." instance=ExtResource("1_rwuof")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.52073526, -0.083201885, 0.72570324)
 
 [node name="Mesa" parent="." instance=ExtResource("4_3ccqb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5499674, -2.5734253)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7167981, -2.1934798)
 
 [node name="Agarrable1" parent="." instance=ExtResource("7_g8504")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15209341, 1.3999674, -2.4531355)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15209341, 1.5640025, -2.4531355)
 
 [node name="Viewport2Din3D" parent="." instance=ExtResource("5_lkqo8")]
 transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0, 1.6118876, 3.0427957)
@@ -49,7 +49,7 @@ scene = ExtResource("6_10xg8")
 scene_properties_keys = PackedStringArray("ControlUI_1.gd")
 
 [node name="VirtualKeyboard" parent="." instance=ExtResource("8_dr5is")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0.13397354, 3.0634155)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.876435, 0.64689255)
 scene_properties_keys = PackedStringArray("virtual_keyboard_2d.gd")
 
 [node name="Button" type="Button" parent="."]
