@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b1q8tjewxjdh4" path="res://Objetos/Mesa.tscn" id="4_0w31f"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_1kwhq"]
 [ext_resource type="PackedScene" uid="uid://6yqcatqx2o76" path="res://Objetos/Agarrable1.tscn" id="7_xlp7v"]
-[ext_resource type="PackedScene" uid="uid://d237xw28ods1j" path="res://Escenas/menu_de_opciones.tscn" id="9_1kwhq"]
+[ext_resource type="PackedScene" uid="uid://d237xw28ods1j" path="res://UI/menu_de_opciones.tscn" id="9_1kwhq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_iv5b0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -44,6 +44,7 @@ input_keyboard = false
 input_gamepad = true
 unshaded = true
 filter = false
+scene_properties_keys = PackedStringArray("menu_de_opciones.gd")
 
 [node name="Button" type="Button" parent="."]
 visible = false

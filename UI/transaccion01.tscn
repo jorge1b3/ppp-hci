@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://djqbokwtckhln"]
+
+[ext_resource type="Texture2D" uid="uid://cmnb2kts5by7y" path="res://assets/proceso_financiero.svg" id="1_8sdka"]
+[ext_resource type="Texture2D" uid="uid://c25sqw3ftrwoc" path="res://assets/cartera.svg" id="2_xce3g"]
+[ext_resource type="Texture2D" uid="uid://bxgkfp3anilsd" path="res://assets/Group 136.svg" id="3_g8drk"]
+[ext_resource type="Texture2D" uid="uid://85u4470rxfwt" path="res://assets/image-Photoroom 3.png" id="5_ggm1i"]
+
+[node name="MenuDeOpciones" type="CanvasLayer"]
+follow_viewport_enabled = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.00006
+offset_top = 54.000008
+offset_right = -782.99994
+offset_bottom = -520.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4263337, 0.4444639)
+disabled = true
+button_mask = 0
+texture_normal = ExtResource("1_8sdka")
+
+[node name="TextureRect" type="TextureRect" parent="TextureButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.44000003
+anchor_right = 0.5
+anchor_bottom = 0.44000003
+offset_left = 70.5
+offset_top = -75.96001
+offset_right = 220.5
+offset_bottom = 76.03999
+texture = ExtResource("2_xce3g")
+
+[node name="Group136" type="Sprite2D" parent="."]
+position = Vector2(957, 476.00003)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_g8drk")
+
+[node name="ImagePhotoroom3" type="Sprite2D" parent="."]
+position = Vector2(899, 355.00003)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_ggm1i")
