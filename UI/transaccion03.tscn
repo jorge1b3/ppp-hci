@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmrdsqd7qaa6f"]
+
+[ext_resource type="Texture2D" uid="uid://bkdytwvw500xn" path="res://assets/Group 141 (1).svg" id="1_jgjr6"]
+[ext_resource type="Texture2D" uid="uid://rpl4ilagdu5g" path="res://assets/image-Photoroom (1).png" id="2_6cyvi"]
+
+[node name="MenuDeOpciones" type="CanvasLayer"]
+follow_viewport_enabled = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Group140" type="Sprite2D" parent="."]
+position = Vector2(300, 402)
+texture = ExtResource("1_jgjr6")
+
+[node name="ImagePhotoroom(1)" type="Sprite2D" parent="."]
+position = Vector2(147, 399)
+texture = ExtResource("2_6cyvi")

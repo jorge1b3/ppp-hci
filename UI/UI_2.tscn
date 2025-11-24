@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://c32sm87mbdatn"]
+[gd_scene load_steps=14 format=3 uid="uid://c32sm87mbdatn"]
 
 [ext_resource type="Script" uid="uid://coo4afr0mr8pn" path="res://Scripts/ControlUI_1.gd" id="1_jxvi7"]
 [ext_resource type="FontFile" uid="uid://bj0tlnd3nxv37" path="res://Tipografias/Roboto-ExtraLight.ttf" id="2_h6hb0"]
-[ext_resource type="Texture2D" uid="uid://vxems587hkih" path="res://assets/interfaz_1.png" id="2_qxkxo"]
 [ext_resource type="Texture2D" uid="uid://c1tdtchxatx8b" path="res://assets/Tienda.svg" id="6_r53ui"]
 [ext_resource type="Texture2D" uid="uid://c25sqw3ftrwoc" path="res://assets/cartera.svg" id="7_xixsu"]
 [ext_resource type="Texture2D" uid="uid://5s62tpvmf5dx" path="res://assets/Green Light Off.svg" id="8_psmre"]
@@ -39,7 +38,6 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_jxvi7")
 [node name="Interfaz1" type="Sprite2D" parent="Control/Panel"]
 z_index = -40
 position = Vector2(1267, 727)
-texture = ExtResource("2_qxkxo")
 
 [node name="NextEscene" type="Button" parent="Control/Panel"]
 layout_mode = 0
