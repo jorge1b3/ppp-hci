@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://rqjuql3gmkp4"]
+
+[ext_resource type="Texture2D" uid="uid://cyp1n7hppmu1c" path="res://assets/botones con texto (2).svg" id="1_cafu3"]
+[ext_resource type="Texture2D" uid="uid://co3stdrtkfmsr" path="res://assets/Group 134.png" id="2_udjhy"]
+
+[node name="MenuDeOpciones" type="CanvasLayer"]
+follow_viewport_enabled = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BotonesConTexto(2)" type="Sprite2D" parent="."]
+position = Vector2(948.0001, 314)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_cafu3")
+
+[node name="Group134" type="Sprite2D" parent="."]
+position = Vector2(947.99994, 205)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_udjhy")
