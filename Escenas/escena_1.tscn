@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cm1bbx625nd1s"]
+[gd_scene load_steps=13 format=3 uid="uid://cm1bbx625nd1s"]
 
 [ext_resource type="Script" uid="uid://dqyn2dvk1gty" path="res://Scripts/CamaraWebVer.gd" id="1_iv5b0"]
 [ext_resource type="PackedScene" uid="uid://demcm3fbl6akt" path="res://Objetos/Suelo.tscn" id="1_rwuof"]
@@ -20,6 +20,8 @@ sky_material = SubResource("ProceduralSkyMaterial_iv5b0")
 background_mode = 2
 sky = SubResource("Sky_3ccqb")
 tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dr5is"]
 
 [node name="Escena1" type="Node3D"]
 script = ExtResource("1_iv5b0")
@@ -44,12 +46,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7167981, -2.1934798)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15209341, 1.5640025, -2.4531355)
 
 [node name="Viewport2Din3D" parent="." instance=ExtResource("5_lkqo8")]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0, 1.6118876, 3.0427957)
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0, 1.6118876, -0.8216605)
 scene = ExtResource("6_10xg8")
 scene_properties_keys = PackedStringArray("ControlUI_1.gd")
 
 [node name="VirtualKeyboard" parent="." instance=ExtResource("8_dr5is")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.876435, 0.64689255)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 4.2479057, 0.64689255)
+material = SubResource("StandardMaterial3D_dr5is")
+transparent = 1
 scene_properties_keys = PackedStringArray("virtual_keyboard_2d.gd")
 
 [node name="Button" type="Button" parent="."]

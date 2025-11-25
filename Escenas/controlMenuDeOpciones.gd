@@ -11,7 +11,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_p_financiero_pressed() -> void:
-	get_tree().change_scene_to_file("res://Escenas/transaccion.tscn")
+	get_tree().change_scene_to_file("res://Escenas/transaccion00.tscn")
 
 func _on_alm_datos_pressed() -> void:
 	print("Almacenamiento de datos como trabajo futuro")

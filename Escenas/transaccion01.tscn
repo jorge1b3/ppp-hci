@@ -45,3 +45,9 @@ texture = ExtResource("3_g8drk")
 position = Vector2(899, 355.00003)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("5_ggm1i")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 399.0
+offset_top = 389.0
+offset_right = 683.0
+offset_bottom = 433.6667
