@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://c32sm87mbdatn"]
+[gd_scene load_steps=13 format=3 uid="uid://c32sm87mbdatn"]
 
 [ext_resource type="Script" uid="uid://coo4afr0mr8pn" path="res://Scripts/ControlUI_1.gd" id="1_jxvi7"]
+[ext_resource type="Script" uid="uid://cawgkatewd7n5" path="res://UI/control.gd" id="2_xixsu"]
 [ext_resource type="Texture2D" uid="uid://c1tdtchxatx8b" path="res://assets/Tienda.svg" id="6_r53ui"]
 [ext_resource type="Texture2D" uid="uid://c25sqw3ftrwoc" path="res://assets/cartera.svg" id="7_xixsu"]
 [ext_resource type="Texture2D" uid="uid://5s62tpvmf5dx" path="res://assets/Green Light Off.svg" id="8_psmre"]
@@ -22,6 +23,7 @@ offset_left = -2928.0
 offset_top = 1520.0
 offset_right = -394.0
 offset_bottom = 2974.0
+script = ExtResource("2_xixsu")
 
 [node name="AlmacenarDatos" type="Sprite2D" parent="."]
 position = Vector2(696, 176)
@@ -93,3 +95,6 @@ texture = ExtResource("10_r53ui")
 position = Vector2(557, 525)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("15_1hojg")
+
+[connection signal="pressed" from="AlmacenarDatos/data" to="Control" method="_on_data_pressed"]
+[connection signal="pressed" from="AlmacenarDatos2/Button2" to="Control" method="_on_button_2_pressed"]

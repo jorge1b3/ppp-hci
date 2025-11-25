@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://cm1bbx625nd1s"]
+[gd_scene load_steps=14 format=3 uid="uid://cm1bbx625nd1s"]
 
 [ext_resource type="Script" uid="uid://dqyn2dvk1gty" path="res://Scripts/CamaraWebVer.gd" id="1_iv5b0"]
 [ext_resource type="PackedScene" uid="uid://demcm3fbl6akt" path="res://Objetos/Suelo.tscn" id="1_rwuof"]
 [ext_resource type="PackedScene" uid="uid://ck0sadmqu3hrk" path="res://Objetos/CamaraXR.tscn" id="2_iv5b0"]
 [ext_resource type="PackedScene" uid="uid://b1q8tjewxjdh4" path="res://Objetos/Mesa.tscn" id="4_3ccqb"]
+[ext_resource type="PackedScene" uid="uid://c32sm87mbdatn" path="res://UI/UI_2.tscn" id="5_f5xdf"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="5_lkqo8"]
 [ext_resource type="PackedScene" uid="uid://5nt7ijxt1hpp" path="res://UI/UI_1.tscn" id="6_10xg8"]
 [ext_resource type="PackedScene" uid="uid://6yqcatqx2o76" path="res://Objetos/Agarrable1.tscn" id="7_g8504"]
@@ -29,29 +30,36 @@ script = ExtResource("1_iv5b0")
 [node name="CamaraXr" parent="." instance=ExtResource("2_iv5b0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96237934, 1.6722956)
 
+[node name="Viewport2Din3D" parent="CamaraXr" instance=ExtResource("5_lkqo8")]
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0.6494808, -0.13356364, -1.8839061)
+scene = ExtResource("6_10xg8")
+scene_properties_keys = PackedStringArray("ControlUI_1.gd")
+
+[node name="Ui1" parent="CamaraXr/Viewport2Din3D" instance=ExtResource("5_f5xdf")]
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_lkqo8")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+visible = false
 shadow_enabled = true
 
 [node name="Suelo" parent="." instance=ExtResource("1_rwuof")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.52073526, -0.083201885, 0.72570324)
+visible = false
 
 [node name="Mesa" parent="." instance=ExtResource("4_3ccqb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7167981, -2.1934798)
+visible = false
 
 [node name="Agarrable1" parent="." instance=ExtResource("7_g8504")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15209341, 1.5640025, -2.4531355)
-
-[node name="Viewport2Din3D" parent="." instance=ExtResource("5_lkqo8")]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 0, 1.6118876, -0.8216605)
-scene = ExtResource("6_10xg8")
-scene_properties_keys = PackedStringArray("ControlUI_1.gd")
+visible = false
 
 [node name="VirtualKeyboard" parent="." instance=ExtResource("8_dr5is")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 4.2479057, 0.64689255)
+visible = false
 material = SubResource("StandardMaterial3D_dr5is")
 transparent = 1
 scene_properties_keys = PackedStringArray("virtual_keyboard_2d.gd")
