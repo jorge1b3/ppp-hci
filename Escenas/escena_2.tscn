@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://demcm3fbl6akt" path="res://Objetos/Suelo.tscn" id="2_xlp7v"]
 [ext_resource type="PackedScene" uid="uid://ck0sadmqu3hrk" path="res://Objetos/CamaraXR.tscn" id="3_ql3nl"]
 [ext_resource type="PackedScene" uid="uid://b1q8tjewxjdh4" path="res://Objetos/Mesa.tscn" id="4_0w31f"]
-[ext_resource type="QuadMesh" path="C:/Users/valli/OneDrive/Documentos/GitHub/ppp-hci/Escenas/menu_de_opciones.tscn" id="4_xlp7v"]
+[ext_resource type="PackedScene" uid="uid://d237xw28ods1j" path="res://Escenas/menu_de_opciones.tscn" id="4_xlp7v"]
 [ext_resource type="Script" uid="uid://bbrkef50tpky4" path="res://Escenas/menu_panel.gd" id="5_ql3nl"]
 [ext_resource type="PackedScene" uid="uid://6yqcatqx2o76" path="res://Objetos/Agarrable1.tscn" id="7_xlp7v"]
 
